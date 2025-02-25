@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+target/
+.mvn/
+
+# json 
+*.json 
+
 # Log file
 *.log
 
