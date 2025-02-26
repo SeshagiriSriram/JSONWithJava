@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.sriram.demo</groupId>
-  <artifactId>simplejsonreadwrite-jackson</artifactId>
+  <artifactId>simplejsonreadwrite-gson</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>simplejsonreadwrite-jackson</name>
+  <name>simplejsonreadwrite-gson</name>
   <url>http://www.example.com</url>
 
   <properties>
