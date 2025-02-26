@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class JsonFileWriter {
     public static void main(String[] args) throws IOException {
 
-    ArrayList<User> users = new ArrayList(); 
+    ArrayList<User> users = new ArrayList<User>(); 
 	User user = new User("Seshagiri Sriram",55,"Chennai","Tamil Nadu","India");
 	users.add(user); 
 	Gson tmpGson = new Gson(); 
