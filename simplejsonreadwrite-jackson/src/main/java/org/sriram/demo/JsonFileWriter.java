@@ -9,13 +9,18 @@ public class JsonFileWriter {
     public static void main(String[] args) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         User user = new User("Seshagiri Sriram",55,"Chennai","Tamil Nadu","India"); 
-	String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(user);
-	System.out.println("JSON: " + json); 
+		User user2 = new User("Kalyani",50,"Chennai","Tamil Nadu","India"); 
+	
 
     ArrayList<User> aList = new ArrayList<User>(); 
-    User user2 = new User("Kalyani",50,"Chennai","Tamil Nadu","India"); 
-    aList.add(user); 
+   aList.add(user); 
     aList.add(user2); 
+	
+	for (User tmp: aList) 
+	{ 
+	String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(tmp);
+	System.out.println("JSON Sample:  " + json); 
+	} 
 	
 	objectMapper.writeValue(new File("mydata.json"), aList);
 
