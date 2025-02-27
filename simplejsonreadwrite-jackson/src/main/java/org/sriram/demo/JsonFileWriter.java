@@ -13,7 +13,10 @@ public class JsonFileWriter {
 	System.out.println("JSON: " + json); 
 
     ArrayList<User> aList = new ArrayList<User>(); 
+    User user2 = new User("Kalyani",50,"Chennai","Tamil Nadu","India"); 
     aList.add(user); 
+    aList.add(user2); 
+	
 	objectMapper.writeValue(new File("mydata.json"), aList);
 
 	// ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
